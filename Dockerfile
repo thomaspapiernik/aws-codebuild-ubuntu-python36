@@ -18,7 +18,7 @@ FROM ubuntu:18.04
 ##########################################################################
 RUN apt-get update && \
     apt-get install -y build-essential python3-pip python3-venv \
-	nodejs zip bzip2 fontconfig git curl docker.io && \
+	nodejs zip bzip2 fontconfig git curl docker.io nodejs && \
 	update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1 && \
 	update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1 && \
 	pip install -U pip && \
